@@ -1,5 +1,7 @@
 # Smart Traffic Control System using Raspberry Pi
 
+Raspberry Pi-based smart traffic control system that adaptively adjusts signal timing using real-time sensor data and edge computing.
+
 ## Overview
 An edge-based traffic signal control system that dynamically adjusts signal timing using real-time sensor data to optimize traffic flow and improve safety.
 
