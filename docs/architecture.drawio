@@ -1,0 +1,34 @@
+<mxfile host="app.diagrams.net" modified="2026-02-06T00:00:00.000Z" agent="draw.io" version="22.1.5" type="device">
+  <diagram id="traffic-arch" name="Architecture">
+    <mxGraphModel dx="1080" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sensors" value="IR / Ultrasonic Sensors" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pi" value="Raspberry Pi&#xa;(Edge Processing Unit)&#xa;- Sensor Data Reading&#xa;- Adaptive Timing Algo&#xa;- Decision Logic" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="200" width="340" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="gpio" value="GPIO Control Layer" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="360" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="leds" value="Traffic Signal LEDs&#xa;(Red / Yellow / Green)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="480" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" style="endArrow=block;html=1;" edge="1" parent="1" source="sensors" target="pi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" style="endArrow=block;html=1;" edge="1" parent="1" source="pi" target="gpio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" style="endArrow=block;html=1;" edge="1" parent="1" source="gpio" target="leds">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label" value="Edge Processing | Low Latency | Real-Time Control" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="230" width="260" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

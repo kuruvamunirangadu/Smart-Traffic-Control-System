@@ -1,0 +1,5 @@
+version: "3.8"
+services:
+  traffic-sim:
+    build: .
+    container_name: traffic_simulator
