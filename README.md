@@ -150,11 +150,3 @@ sudo ./traffic_controller
 
 Resume line: Achieved sub-200 ms traffic signal response using edge-level processing on Raspberry Pi.
 
-## STAR Interview Summary
-**Situation:** Urban traffic flow needed adaptive control without cloud dependency.
-
-**Task:** Build a low-latency edge system that reads real sensor data and drives traffic LEDs.
-
-**Action:** Implemented adaptive timing logic, integrated HC-SR04 sensing, and built both Python and C versions with pigpio for precise GPIO timing.
-
-**Result:** Delivered sub-200 ms signal response and stable multi-hour runtime while logging telemetry for analysis.
